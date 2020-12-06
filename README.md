@@ -132,7 +132,7 @@ Benchmark Files for 4GHz:[specbzip](https://github.com/christos99/9432_Christos_
 ## Second Part
 
 ### 1. DIfferent Configurations:
-
+**System 1**  
 **1GHz-64kB-2-32kB-2-512kB-8-64:**
 
 * L1 instruction cache size = 64kB
@@ -145,7 +145,7 @@ Benchmark Files for 4GHz:[specbzip](https://github.com/christos99/9432_Christos_
 
 CPI(average):2.7348436
 
-
+**System 2**  
 **1GHz-128kB-1-64kB-1-1024kB-2-64:**
 
 * L1 instruction cache size = 128kB
@@ -158,6 +158,7 @@ CPI(average):2.7348436
 
 CPI(average):2.7343856
 
+**System 3**  
 **1GHz-128kB-1-128kB-1-2048kB-2-64:**
 
 * L1 instruction cache size = 128kB
@@ -169,7 +170,7 @@ CPI(average):2.7343856
 * cache line size = 64
 
 CPI(average):2.717256
-
+**System 4**  
 **1GHz-128kB-8-64kB-8-1024kB-16-64:**
 
 * L1 instruction cache size = 128kB
@@ -181,7 +182,7 @@ CPI(average):2.717256
 * cache line size = 64
 
 CPI(average):2.7174622
-
+**System 5**  
 **1GHz-128kB-16-64kB-16-1024kB-32-64:**
 
 * L1 instruction cache size = 128kB
@@ -193,7 +194,7 @@ CPI(average):2.7174622
 * cache line size = 64
 
 CPI(average):2.7166182
-
+**System 6**  
 **1GHz-256kB-4-256kB-4-4096kB-16-64:**
 
 * L1 instruction cache size = 256kB
@@ -205,10 +206,11 @@ CPI(average):2.7166182
 * cache line size = 64
 
 CPI(average):2.7005728  
-(specjeng not included)  
-CPI(average):1.61242525
 
+  
+CPI(average)(specjeng not included):1.61242525
 
+I've noticed that that specjeng benchmark increased dramtically the cpi avergae and that makes me wonder if there are any errors.
 
 
 
