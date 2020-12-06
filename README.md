@@ -204,8 +204,8 @@ CPI(average):2.7166182
 * L2 cache associativity = 16
 * cache line size = 64
 
-CPI(average):2.7005728
-(specjeng not included)
+CPI(average):2.7005728  
+(specjeng not included)  
 CPI(average):1.61242525
 
 
