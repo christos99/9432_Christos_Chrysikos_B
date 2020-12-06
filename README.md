@@ -53,6 +53,7 @@ Benchmark Files for 4GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng]()
 
 
 
+[Results File](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/Results_spec_results_cpi_all.txt)
 
 ### 2. Graphs
 
