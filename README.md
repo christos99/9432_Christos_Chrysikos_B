@@ -113,7 +113,7 @@ Date gathered in a [file](https://github.com/christos99/9432_Christos_Chrysikos_
 
 When we run the simualtion with cpu-clock = 2GHz we see that the system.clk_domain.clock = 1000 but the cpu_cluster.clk_domain.clock = 500. If we increase the cpu-clock=4GHz then cpu_cluster.clk_domain.clock= 250 so I suppose that whatever the clock cycle is in GHz it is two or in the last case four times faster than the systems clock.  
 **STATS:**
-* [stats.txt for the 2GHz]()  
+* [stats.txt for the 2GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_2GHz-32kB-4-64kB-4-2048kB-16-64)  
 * [stats.txt for the 4GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Benchmarks/spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specbzip/stats.txt) 
 
 In case we add another CPU the frequency is going to be 2GHz or what ever else we define as we run the simulation. 
@@ -122,7 +122,7 @@ In case we add another CPU the frequency is going to be 2GHz or what ever else w
 
  
 Benchmark Files for 2GHz:[specbzip](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specbzip), [specmcf](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specmcf), [spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/spechmmer), [specsjeng](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specsjeng), [speclibm](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/speclibm)  
-Benchmark Files for 4GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng](), [speclibm]()
+Benchmark Files for 4GHz:[specbzip](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specbzip), [specmcf](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/spechmmer), [spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/speclibm), [specsjeng](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specmcf), [speclibm](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specsjeng)
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
