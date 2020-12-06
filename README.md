@@ -38,8 +38,8 @@ In case we add another CPU the frequency is going to be 2GHz or what ever we def
 
 
 
-Reference Files: [config.json](), [config.ini](), [stats.txt]()
-Benchmark Files for 2GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng](), [speclibm]()
+Reference Files: [config.json](), [config.ini](), [stats.txt]()  
+Benchmark Files for 2GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng](), [speclibm]()  
 Benchmark Files for 4GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng](), [speclibm]()
 
 
