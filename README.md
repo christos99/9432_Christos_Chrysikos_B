@@ -21,7 +21,7 @@
 **Cache Line**
 * Size = 
 
-##############################################################################################################################################################
+########################################################################################################################################
 
 ### 2. (SIM_SECONDS, CPI, MISS RATES):
 #### specbzip
@@ -74,9 +74,9 @@
 * L1D = 0.121831
 * L2 = 0.999940
 
+Date extracted from [here](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/spec_results_1GHz-default.txt)
 
-
-##############################################################################################################################################################
+########################################################################################################################################
 
 
 ### 3.(CPU CLOCK = 2GHz)
@@ -87,7 +87,7 @@ In case we add another CPU the frequency is going to be 2GHz or what ever we def
 
 
 Reference Files: [config.json](), [config.ini](), [stats.txt]()  
-Benchmark Files for 2GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng](), [speclibm]()  
+Benchmark Files for 2GHz:[specbzip](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specbzip), [specmcf](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specmcf), [spechmmer](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/spechmmer), [specsjeng](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specsjeng), [speclibm](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/speclibm)  
 Benchmark Files for 4GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng](), [speclibm]()
 
 
