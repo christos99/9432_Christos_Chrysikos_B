@@ -4,10 +4,13 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## First Part
+--------------
 
 ### 1.(Basic Paramters of the CPU):
 
 #### Cache**
+--------------
+
 **L1i:**
 * Size = 32kB
 * Assoc =2
@@ -32,6 +35,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 
 ### 2. (SIM_SECONDS, CPI, MISS RATES):
 #### specbzip
+--------------
 **SIM_SECONDS = 0.160359**
 
 **CPI(average) = 1.603595**  
@@ -42,6 +46,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 * L2 = 0.295235
 
 #### specmcf
+--------------
 **SIM_SECONDS = 0.123265**
 
 **CPI(average) = 1.232645**  
@@ -52,6 +57,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 * L2 = 0.067668
 
 #### spechmmer
+--------------
 **SIM_SECONDS = 0.118517**
 
 **CPI(average) = 1.185174**  
@@ -62,6 +68,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 * L2 = 0.078295
 
 #### speclibm
+--------------
 **SIM_SECONDS = 0.262262**
 
 **CPI(average) = 2.622616**  
@@ -72,6 +79,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 * L2 = 0.999978
 
 #### specsjeng
+--------------
 **SIM_SECONDS = 0.705640**
 
 **CPI(average) = 2.622616**  
