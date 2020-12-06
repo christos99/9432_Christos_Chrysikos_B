@@ -4,27 +4,27 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## First Part
---------------
+
 
 ### 1.(Basic Paramters of the CPU):
 
-#### Cache**
---------------
+#### Cache
 
-**L1i:**
-* Size = 32kB
-* Assoc =2
 
-**L1d:**
-* Size = 64kB
-* Assoc = 2
+* L1I:
+  * Size = 32kB
+  * Assoc = 2
 
-**L2:**
-* Size = 2MB
-* Assoc = 8
+* L1D:
+  * Size = 64kB
+  * Assoc = 2
 
-**Cache Line**
-* Size = 64
+* L2:
+   * Size = 2MB
+   * Assoc = 8
+
+* Cache Line:
+  * Size = 64
 
 
 Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/Options.py)
@@ -34,67 +34,69 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 
 
 ### 2. (SIM_SECONDS, CPI, MISS RATES):
+
 #### specbzip
---------------
-**SIM_SECONDS = 0.160359**
 
-**CPI(average) = 1.603595**  
+  * SIM_SECONDS = 0.160359
 
-**MISS RATES**
-* L1I = 0.000075
-* L1D = 0.014123
-* L2 = 0.295235
+  * CPI = 1.603595
+
+  * MISS RATES
+    * L1I = 0.000075
+    * L1D = 0.014123
+    * L2 = 0.295235
 
 #### specmcf
---------------
-**SIM_SECONDS = 0.123265**
 
-**CPI(average) = 1.232645**  
+* SIM_SECONDS = 0.123265
 
-**MISS RATES**
-* L1I = 0.019046
-* L1D = 0.002062
-* L2 = 0.067668
+* CPI = 1.232645
+
+* MISS RATES
+  * L1I = 0.019046
+  * L1D = 0.002062
+  * L2 = 0.067668
 
 #### spechmmer
---------------
-**SIM_SECONDS = 0.118517**
 
-**CPI(average) = 1.185174**  
+* SIM_SECONDS = 0.118517
 
-**MISS RATES**
-* L1I = 0.000212
-* L1D = 0.001619
-* L2 = 0.078295
+* CPI = 1.185174
+
+* MISS RATES**
+  * L1I = 0.000212
+  * L1D = 0.001619
+  * L2 = 0.078295
 
 #### speclibm
---------------
-**SIM_SECONDS = 0.262262**
 
-**CPI(average) = 2.622616**  
+* SIM_SECONDS = 0.262262
 
-**MISS RATES**
-* L1I = 0.000095	
-* L1D =0.060972
-* L2 = 0.999978
+* CPI = 2.622616
+
+* MISS RATES 
+  * L1I = 0.000095	
+  * L1D =0.060972
+  * L2 = 0.999978
 
 #### specsjeng
---------------
-**SIM_SECONDS = 0.705640**
 
-**CPI(average) = 2.622616**  
+* SIM_SECONDS = 0.705640
 
-**MISS RATES**
-* L1I = 	0.000020
-* L1D = 0.121831
-* L2 = 0.999940
+* CPI = 2.622616
+
+* MISS RATES
+  * L1I = 	0.000020
+  * L1D = 0.121831
+  * L2 = 0.999940
 
 Date extracted from [here](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/spec_results_1GHz-default.txt)
-[CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/CPI.pdf)
-[SIM SECONDS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/SIM_SECONDS.pdf)
-[L1I MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L1I_Miss_Rate.pdf)
-[L1D MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L1D_Miss_Rate.pdf)
-[L2 MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L2_Miss_Rate.pdf)
+* GRAPHS:
+  * [CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/CPI.pdf)  
+  * [SIM SECONDS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/SIM_SECONDS.pdf)  
+  * [L1I MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L1I_Miss_Rate.pdf)  
+  * [L1D MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L1D_Miss_Rate.pdf)  
+  * [L2 MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L2_Miss_Rate.pdf)  
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -102,7 +104,9 @@ Date extracted from [here](https://github.com/christos99/9432_Christos_Chrysikos
 
 ### 3.(CPU CLOCK = 2GHz)
 
-When we run the simualtion with cpu-clock = 2GHz we see that the system.clk_domain.clock = 1000 but the cpu_cluster.clk_domain.clock = 500. If we increase the cpu-clock=4GHz then cpu_cluster.clk_domain.clock= 250 so I suppose that whatever is clock cycle in GHz it is 2 or the last case 4 times faster than the system clock.[stats.txt for the 2GHz]()  [stats.txt for the 4GHz]()  
+When we run the simualtion with cpu-clock = 2GHz we see that the system.clk_domain.clock = 1000 but the cpu_cluster.clk_domain.clock = 500. If we increase the cpu-clock=4GHz then cpu_cluster.clk_domain.clock= 250 so I suppose that whatever is clock cycle in GHz it is 2 or the last case 4 times faster than the system clock.  
+[stats.txt for the 2GHz]()  
+[stats.txt for the 4GHz]()  
 In case we add another CPU the frequency is going to be 2GHz or what ever we define when we run the simulation. 
 
 
