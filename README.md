@@ -46,7 +46,79 @@ Benchmark Files for 4GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng]()
 ## Second Part
 
 ### 1. DIfferent Configurations:
-* 
+
+**1GHz-64kB-2-32kB-2-512kB-8-64:**
+
+* L1 instruction cache size = 64kB
+* L1 instruction cache associativity = 2
+* L1 data cache size = 32kB
+* L1 data cache associativity = 2
+* L2 cache size = 512kB
+* L2 cache associativity = 8
+* cache line size = 64
+
+CPI(average):2.7348436
+
+
+**1GHz-128kB-1-64kB-1-1024kB-2-64:**
+
+* L1 instruction cache size = 128kB
+* L1 instruction cache associativity = 1
+* L1 data cache size = 64kB
+* L1 data cache associativity = 1
+* L2 cache size = 1024kB
+* L2 cache associativity = 2
+* cache line size = 64
+
+CPI(average):2.7343856
+
+**1GHz-128kB-1-128kB-1-2048kB-2-64:**
+
+* L1 instruction cache size = 128kB
+* L1 instruction cache associativity = 1
+* L1 data cache size = 1
+* L1 data cache associativity 1
+* L2 cache size = 2048kB
+* L2 cache associativity = 2
+* cache line size = 64
+
+CPI(average):2.717256
+
+**1GHz-128kB-8-64kB-8-1024kB-16-64:**
+
+* L1 instruction cache size = 128kB
+* L1 instruction cache associativity = 64kB
+* L1 data cache size = 64kB
+* L1 data cache associativity = 8
+* L2 cache size = 1024kB
+* L2 cache associativity = 16
+* cache line size = 64
+
+CPI(average):2.7174622
+
+**1GHz-128kB-16-64kB-16-1024kB-32-64:**
+
+* L1 instruction cache size = 128kB
+* L1 instruction cache associativity = 16
+* L1 data cache size = 64kB
+* L1 data cache associativity = 16
+* L2 cache size = 1024kB
+* L2 cache associativity = 32
+* cache line size = 64
+
+CPI(average):2.7166182
+
+**1GHz-256kB-4-256kB-4-4096kB-16-64:**
+
+* L1 instruction cache size = 256kB
+* L1 instruction cache associativity = 4
+* L1 data cache size = 256kB
+* L1 data cache associativity = 4
+* L2 cache size = 4096kB
+* L2 cache associativity = 16
+* cache line size = 64
+
+CPI(average):2.7005728
 
 
 
