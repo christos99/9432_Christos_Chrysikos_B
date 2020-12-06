@@ -1,7 +1,7 @@
 # 9432_Christos_Chrysikos_B
 2nd Lab on gem-5 simulations Computer Architecture
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## First Part
 
@@ -20,16 +20,64 @@
 
 **Cache Line**
 * Size = 
+
+##############################################################################################################################################################
+
 ### 2. (SIM_SECONDS, CPI, MISS RATES):
+#### specbzip
+**SIM_SECONDS = 0.160359**
 
-**SIM_SECONDS=**
-
-**CPI =**  
+**CPI(average) = 1.603595**  
 
 **MISS RATES**
-* L1I = 
-* L1D =
-* L2 = 
+* L1I = 0.000075
+* L1D = 0.014123
+* L2 = 0.295235
+
+#### specmcf
+**SIM_SECONDS = 0.123265**
+
+**CPI(average) = 1.232645**  
+
+**MISS RATES**
+* L1I = 0.019046
+* L1D = 0.002062
+* L2 = 0.067668
+
+#### spechmmer
+**SIM_SECONDS = 0.118517**
+
+**CPI(average) = 1.185174**  
+
+**MISS RATES**
+* L1I = 0.000212
+* L1D = 0.001619
+* L2 = 0.078295
+
+#### speclibm
+**SIM_SECONDS = 0.262262**
+
+**CPI(average) = 2.622616**  
+
+**MISS RATES**
+* L1I = 0.000095	
+* L1D =0.060972
+* L2 = 0.999978
+
+#### specsjeng
+**SIM_SECONDS = 0.705640**
+
+**CPI(average) = 2.622616**  
+
+**MISS RATES**
+* L1I = 	0.000020
+* L1D = 0.121831
+* L2 = 0.999940
+
+
+
+##############################################################################################################################################################
+
 
 ### 3.(CPU CLOCK = 2GHz)
 
@@ -41,6 +89,10 @@ In case we add another CPU the frequency is going to be 2GHz or what ever we def
 Reference Files: [config.json](), [config.ini](), [stats.txt]()  
 Benchmark Files for 2GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng](), [speclibm]()  
 Benchmark Files for 4GHz:[specbzip](), [specmcf](), [spechmmer](), [specsjeng](), [speclibm]()
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 ## Second Part
