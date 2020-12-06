@@ -1,2 +1,0 @@
-Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
-spec_results_cpu_clk_4GHz/specbzip	NAN	NAN	NAN	0.960120
