@@ -249,15 +249,6 @@ I've noticed that that specjeng benchmark increased dramtically the cpi avergae 
 
 
 
-
-Bibliography:
-* [https://www.sciencedirect.com/topics/computer-science/set-associative-cache](https://www.sciencedirect.com/topics/computer-science/set-associative-cache)  
-* [https://courses.cs.washington.edu/courses/cse378/09au/lectures/cse378au09-20.pdf](https://courses.cs.washington.edu/courses/cse378/09au/lectures/cse378au09-20.pdf)
-* [Memory systems](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/memory-systems.pdf)
-* [Caches and Memory](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/lecture_caches-handout.pdf)
-* [Science Magazine](https://www.extremetech.com/extreme/188776-how-l1-and-l2-cpu-caches-work-and-why-theyre-an-essential-part-of-modern-chips)
-
-
 ## Third Part
 
 Custom Cache Prices: 
@@ -267,6 +258,10 @@ Custom Cache Prices:
   lets say assoc = 2 then cost = 0.5$ dollars per core
 * Cache line is not changed so I won't consider the cost  
 
+With those values in mind we create a functionn that calculates the cost of our CPU:
+
+Cost = L1 instruction cache size(in kB) * 0.005$ + L1 data cache size(in Kb) * 0.005$ + L1 instruction cache associativity * 0.25$ + L1 data cache associativity * 0.25$ + L2 cache size(in kB) * 0.0025$ + L2 data cache associativity * 0.25$
+(I will consider making the L1 cache size more expensive or maybe the associativity cheaper because I think the sizes are not what I suppose they should be
 **System 1 :**
 Cost:
 * L1 instruction cache size = 64kB : 0.32$
@@ -333,3 +328,15 @@ Total cost = 29.04$
 
 [COST GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost.pdf)
 [COST-CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost-CPI.pdf)
+
+
+
+
+
+Bibliography:
+* [https://www.sciencedirect.com/topics/computer-science/set-associative-cache](https://www.sciencedirect.com/topics/computer-science/set-associative-cache)  
+* [https://courses.cs.washington.edu/courses/cse378/09au/lectures/cse378au09-20.pdf](https://courses.cs.washington.edu/courses/cse378/09au/lectures/cse378au09-20.pdf)
+* [Memory systems](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/memory-systems.pdf)
+* [Caches and Memory](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/lecture_caches-handout.pdf)
+* [Science Magazine](https://www.extremetech.com/extreme/188776-how-l1-and-l2-cpu-caches-work-and-why-theyre-an-essential-part-of-modern-chips)
+
