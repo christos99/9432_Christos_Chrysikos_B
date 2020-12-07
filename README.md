@@ -112,9 +112,19 @@ Date gathered in a [file](https://github.com/christos99/9432_Christos_Chrysikos_
 ### 3.(CPU CLOCK = 2GHz)
 
 When we run the simualtion with cpu-clock = 2GHz we see that the system.clk_domain.clock = 1000 but the cpu_cluster.clk_domain.clock = 500. If we increase the cpu-clock=4GHz then cpu_cluster.clk_domain.clock= 250 so I suppose that whatever the clock cycle is in GHz it is two or in the last case four times faster than the systems clock.  
-**STATS:**
-* [stats.txt for the 2GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_2GHz-32kB-4-64kB-4-2048kB-16-64)  
-* [stats.txt for the 4GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Benchmarks/spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specbzip/stats.txt) 
+* **SIM_SECONDS**
+  * 1GHz(average) = 0.2740086s [spec_results_1GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/RESULTS_1_2_4_GHz/spec_results_1GHz-latest-all.txt)
+  * 2GHz(average) = 0.1788366s [spec_results_2GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/RESULTS_1_2_4_GHz/spec_results_2GHz-default.txt)
+  * 4GHz(average) = 0.1316488s [spec_results_4GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/RESULTS_1_2_4_GHz/spec_results_4GHz-default.txt)
+
+As we review the sim_seconds for each individual simulation, we can easily extract that there is definetely increased performance as we increase the clock speeds .On the contrary we can't observe any type of scalabilty to the clock increase. For example for the first simulation we have a clock speed of 1GHz and the sim_seconds are 0.274s in average, as we double the clock speed we expect to see half the runntime but that it is not the case here. The sim_seconds for 2GHz are 0.1788s which is greater than 0.274/2 = 0.137s and we procceed with a greater clock increase such as 4GHz we see that the change in sim_seconds is even smaller sim seconds = 0.1316488s which is much greater than 0.1788/2 = 0.0894s and even greater than 0.137/2 = 0.0685s which is the 1/4 of the 1GHz runtime.  
+
+Sources that say more about clock speed and general cpu performance increase:
+[Factors affecting processor performance](https://isaaccomputerscience.org/concepts/sys_arch_performance)
+
+* **STATS:**
+  * [stats.txt for the 2GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_2GHz-32kB-4-64kB-4-2048kB-16-64)  
+  * [stats.txt for the 4GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Benchmarks/spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specbzip/stats.txt) 
 
 In case we add another CPU the frequency is going to be 2GHz or what ever else we define as we run the simulation. 
 
@@ -170,6 +180,7 @@ CPI(average):2.7343856
 * cache line size = 64
 
 CPI(average):2.717256
+
 **System 4**  
 **1GHz-128kB-8-64kB-8-1024kB-16-64:**
 
@@ -182,6 +193,7 @@ CPI(average):2.717256
 * cache line size = 64
 
 CPI(average):2.7174622
+
 **System 5**  
 **1GHz-128kB-16-64kB-16-1024kB-32-64:**
 
@@ -194,6 +206,7 @@ CPI(average):2.7174622
 * cache line size = 64
 
 CPI(average):2.7166182
+
 **System 6**  
 **1GHz-256kB-4-256kB-4-4096kB-16-64:**
 
