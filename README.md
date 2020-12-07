@@ -330,3 +330,6 @@ Total cost = 22.08$
 * L2 cache associativity = 16 : 4$
 
 Total cost = 29.04$
+
+[COST GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost.pdf)
+[COST-CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost-CPI.pdf)
