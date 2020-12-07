@@ -251,12 +251,31 @@ I've noticed that that specjeng benchmark increased dramtically the cpi avergae 
 
 ## Third Part
 
-Custom Cache Prices: 
-* L1i and L1d = 5.000$ per GB (considering manufacture and design)
-* L2 = 2.500 per GB (easier to make than L1 cache)
+When we think of designing a CPU cache memmory hierarchy the first thing that comes to mind alogside with performance is the cost. Yes it certain that we want to build the faster and most powerfull CPU but we also want to make it as cheap as possible so it's easily distributed and used. With that in my mind through my reasearch I collected some information through runnning several simulation with different specifications for CPU Cache design and size. I 've listed them below from System 1-6 (I run many different benchmarks but I chose those who had the most sagnifiacant diafferences).  
+
+About the CPU Design, the L1I and L1D cache is the very fist level of cache memmory inside the CPU and therefore the fastest. The most commonly used size for those caches is 16-32-64 kB. There is a reason we won't make them bigger,first the cost as I mentioned before this SRAM type of memmory is very expensive and second the bigger the cache size we have we are going to have smaller miss rate, that sounds good at first but it creates other kinf o f problems. There are 3 kinds of misses compulsory, capacity, and conflict. When we increase the size the conflict misses increase and when we decrease the size we more compulsory misses. It is optimal therfore to find  a sweet spot which in this case is 32-64kB and in some cases 128kB.  
+For L2 Cache the things are a bit different we have a larger sized cache in general ranged from 512kb to 2048 kb and in some cases 4096kB or 8192kB. It is still fast SRAM but not as fast and expensive as the L1. We use L2 cache to reduce the penalty from going to the main memory. So it 's a Level between CPU - L1 Cache and main memory DRAM.  
+Then last we consider the associativity between cache levels. Every cache level I reffered to has it's own level of assocaitivity, there are three types of associativity.
+
+ * 1 - way associative or else direct mapped
+ * N - way associative 
+ * Fully associative
+ 
+ Increasing the associativity increases the complexity of the CPU.  
+ There is more inforamtion about Caches to the links I 've used bellow. Those references I used to make an estimate of what the prices of the caches are going to be.
+ 
+ 
+Cost Estimates: 
+* L1i and L1d = 5.000$ per GB (considering manufacture and design it is the most expensive SRAM)
+* L2 = 2.500 per GB (easier and cheaper to make than L1 cache but still SRAM)
 * Assocativity = for every multiplication by two the cost doubles(for example: assoc = 2, cost = 2 | assoc = 4, cost = 4 etc) 
-  lets say assoc = 2 then cost = 0.5$ dollars per core
-* Cache line is not changed so I won't consider the cost  
+  lets estimate that for assoc = 2 the cost = 0.5$ dollars 
+* Cache line is not changed so I won't consider that in the cost  
+
+Refrence for Costs and Prices and CPU Architecture: 
+* [University of NOTRE DAMNE](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/University%20of%20NOTREDAM%20Presentation.pdf) 
+* [Caches and Memory Presentation](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/lecture_caches-handout.pdf)
+
 
 With those values in mind we create a functionn that calculates the cost of our CPU:
 
@@ -326,7 +345,7 @@ Total cost = 22.08$
 
 Total cost = 29.04$
 
-[COST GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost.pdf)
+[COST GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost.pdf)  
 [COST-CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost-CPI.pdf)
 
 
