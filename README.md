@@ -290,43 +290,43 @@ Cost:
 Total Cost = 8.54$
 
 **System 3 :**  
-L1 instruction cache size = 128kB : 0.64$
-L1 instruction cache associativity = 1 : 0.25$
-L1 data cache size = 128 : 0.64$
-L1 data cache associativity 1 : 0.25
-L2 cache size = 2048kB : 10.24$
-L2 cache associativity = 2 : 0.5$
+* L1 instruction cache size = 128kB : 0.64$
+* L1 instruction cache associativity = 1 : 0.25$
+* L1 data cache size = 128 : 0.64$
+* L1 data cache associativity 1 : 0.25
+* L2 cache size = 2048kB : 10.24$
+* L2 cache associativity = 2 : 0.5$
 
 Total cost = 12.52$
 
 
 **System 4 :**  
-L1 instruction cache size = 128kB : 0.64$
-L1 instruction cache associativity = 8 : 2$
-L1 data cache size = 64kB : 0.32$
-L1 data cache associativity 8 : 2$
-L2 cache size = 1024kB : 5.12$
-L2 cache associativity = 16 : 4$
+* L1 instruction cache size = 128kB : 0.64$
+* L1 instruction cache associativity = 8 : 2$
+* L1 data cache size = 64kB : 0.32$
+* L1 data cache associativity 8 : 2$
+* L2 cache size = 1024kB : 5.12$
+* L2 cache associativity = 16 : 4$
 
 Total cost = 14.08$
 
 **System 5 :**  
-L1 instruction cache size = 128kB : 0.64$
-L1 instruction cache associativity = 16 : 4$
-L1 data cache size = 64kB : 0.32$
-L1 data cache associativity 16 : 4$
-L2 cache size = 1024kB : 5.12$
-L2 cache associativity = 32 : 8$
+* L1 instruction cache size = 128kB : 0.64$
+* L1 instruction cache associativity = 16 : 4$
+* L1 data cache size = 64kB : 0.32$
+* L1 data cache associativity 16 : 4$
+* L2 cache size = 1024kB : 5.12$
+* L2 cache associativity = 32 : 8$
 
 Total cost = 22.08$
 
 
 **System 6 :**  
-L1 instruction cache size = 256kB : 1.28$
-L1 instruction cache associativity = 4 : 1$
-L1 data cache size = 256kB : 1.28$
-L1 data cache associativity 4 : 1$
-L2 cache size = 4096kB : 20.48$
-L2 cache associativity = 16 : 4$
+* L1 instruction cache size = 256kB : 1.28$
+* L1 instruction cache associativity = 4 : 1$
+* L1 data cache size = 256kB : 1.28$
+* L1 data cache associativity 4 : 1$
+* L2 cache size = 4096kB : 20.48$
+* L2 cache associativity = 16 : 4$
 
 Total cost = 29.04$
