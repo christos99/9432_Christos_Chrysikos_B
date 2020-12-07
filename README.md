@@ -36,7 +36,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 
 #### specbzip
 
-  * SIM_SECONDS = 0.160359
+  * SIM_SECONDS = 0.160359s
 
   * CPI = 1.603595
 
@@ -82,7 +82,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 
 * SIM_SECONDS = 0.705640
 
-* CPI = 2.622616
+* CPI = 7.0564
 
 * MISS RATES
   * L1I = 	0.000020
@@ -111,13 +111,15 @@ Date gathered in a [file](https://github.com/christos99/9432_Christos_Chrysikos_
 
 ### 3.(CPU CLOCK = 2GHz)
 
-When we run the simualtion with cpu-clock = 2GHz we see that the system.clk_domain.clock = 1000 but the cpu_cluster.clk_domain.clock = 500. If we increase the cpu-clock=4GHz then cpu_cluster.clk_domain.clock= 250 so I suppose that whatever the clock cycle is in GHz it is two or in the last case four times faster than the systems clock.  
+When we run the simualtion with cpu-clock = 2GHz we see that the system.clk_domain.clock = 1000 but the cpu_cluster.clk_domain.clock = 500. If we increase the cpu-clock=4GHz then cpu_cluster.clk_domain.clock= 250 so I suppose that whatever the CPU clock cycle is in GHz it is two or in the last case four times faster than the systems clock.  
 * **SIM_SECONDS**
   * 1GHz(average) = 0.2740086s [spec_results_1GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/RESULTS_1_2_4_GHz/spec_results_1GHz-latest-all.txt)
   * 2GHz(average) = 0.1788366s [spec_results_2GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/RESULTS_1_2_4_GHz/spec_results_2GHz-default.txt)
   * 4GHz(average) = 0.1316488s [spec_results_4GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/RESULTS_1_2_4_GHz/spec_results_4GHz-default.txt)
 
-As we review the sim_seconds for each individual simulation, we can easily extract that there is definetely increased performance as we increase the clock speeds .On the contrary we can't observe any type of scalabilty to the clock increase. For example for the first simulation we have a clock speed of 1GHz and the sim_seconds are 0.274s in average, as we double the clock speed we expect to see half the runntime but that it is not the case here. The sim_seconds for 2GHz are 0.1788s which is greater than 0.274/2 = 0.137s and we procceed with a greater clock increase such as 4GHz we see that the change in sim_seconds is even smaller sim seconds = 0.1316488s which is much greater than 0.1788/2 = 0.0894s and even greater than 0.137/2 = 0.0685s which is the 1/4 of the 1GHz runtime.  
+As we review the sim_seconds for each individual simulation, we can easily extract that there is definetely increased performance as we increase the clock speeds .On the contrary we can't observe any type of scalabilty to the clock increase. For example for the first simulation we have a clock speed of 1GHz and the sim_seconds are 0.274s in average, as we double the clock speed we expect to see half the runntime but that it is not the case here. The sim_seconds for 2GHz are 0.1788s which is greater than 0.274/2 = 0.137s and we procceed with a greater clock increase such as 4GHz, the change in sim_seconds is even smaller sim seconds = 0.1316488s > 0.1788/2 = 0.0894s and even greater than 0.137/2 = 0.0685s which is the 1/4 of the 1GHz runtime.  As coclusion an increase in CPU clock will increase the performance but not proportionally to the clock increase.
+
+In case we add another CPU the frequency is going to be 2GHz or what ever else we define as we run the simulation. 
 
 Sources that say more about clock speed and general cpu performance increase:
 [Factors affecting processor performance](https://isaaccomputerscience.org/concepts/sys_arch_performance)
@@ -245,24 +247,24 @@ I've noticed that that specjeng benchmark increased dramtically the cpi avergae 
 
 ### 2. Graphs
 
-Waiting for benchmarks results. I ran an extensive number of Benchmarks with almost all possibles changes that I could do considering the limits that we were given. Although I had enough benchmarks already about 10 different, I made a script so that I can see the effects of every individual change reffering to the deafault configuration. I made that choice beacuse I couldn't think that the mixed benchmarks I had, could give descriptive enough graphs and results.
+Waiting for benchmarks results. I ran an extensive number of Benchmarks with almost all possibles changes that I could do considering the limits that we were given. Although I had enough benchmarks already about 10 different, I made a script so that I can see the effects of every individual change reffering to the default configuration. I made that choice beacuse I couldn't think that the mixed benchmarks I had, could give descriptive enough graphs and results.
 
 
 
 ## Third Part
 
-When we think of designing a CPU cache memmory hierarchy the first thing that comes to mind alogside with performance is the cost. Yes it certain that we want to build the faster and most powerfull CPU but we also want to make it as cheap as possible so it's easily distributed and used. With that in my mind through my reasearch I collected some information through runnning several simulation with different specifications for CPU Cache design and size. I 've listed them below from System 1-6 (I run many different benchmarks but I chose those who had the most sagnifiacant diafferences).  
+When we think of designing a CPU cache memmory hierarchy the first thing that comes to mind alogside with performance is the cost. Yes it is certain that we want to build the fastest and most powerfull CPU but we also want to make it as cheap as possible so it's easily distributed and used. With that in my mind through my reasearch I collected some information through runnning several simulations with different specifications for CPU Cache design and size. I 've listed them below from System 1-6 (I ran many different benchmarks but I chose those who had the most sagnifiacant differences).  
 
-About the CPU Design, the L1I and L1D cache is the very fist level of cache memmory inside the CPU and therefore the fastest. The most commonly used size for those caches is 16-32-64 kB. There is a reason we won't make them bigger,first the cost as I mentioned before this SRAM type of memmory is very expensive and second the bigger the cache size we have we are going to have smaller miss rate, that sounds good at first but it creates other kinf o f problems. There are 3 kinds of misses compulsory, capacity, and conflict. When we increase the size the conflict misses increase and when we decrease the size we more compulsory misses. It is optimal therfore to find  a sweet spot which in this case is 32-64kB and in some cases 128kB.  
-For L2 Cache the things are a bit different we have a larger sized cache in general ranged from 512kb to 2048 kb and in some cases 4096kB or 8192kB. It is still fast SRAM but not as fast and expensive as the L1. We use L2 cache to reduce the penalty from going to the main memory. So it 's a Level between CPU - L1 Cache and main memory DRAM.  
+About the CPU Design, the L1I and L1D cache is the very fist level of cache memmory inside the CPU and therefore the fastest. The most commonly used size for those caches is 16-32-64 kB. There is a reason we won't make them bigger,first the cost as I mentioned before this SRAM type of memmory is very expensive and second the bigger the cache size the smaller the miss rate, that sounds good at first but it creates other kind of problems. There are 3 kinds of misses compulsory, capacity, and conflict. When we increase the size the conflict misses increase and when we decrease the size we more compulsory misses. It is therfore optimal to find  a sweet spot which in this case is 32-64kB and in some cases 128kB.  
+For L2 Cache the things are a bit different we have a larger sized cache in general, ranged from 512kb to 2048 kb and in some cases even 4096kB or 8192kB. It is still fast SRAM but not as fast and expensive as the L1. We use L2 cache to reduce the penalty from going to the main memory. So it 's a Level between CPU - L1 Cache and main memory DRAM.  
 Then last we consider the associativity between cache levels. Every cache level I reffered to has it's own level of assocaitivity, there are three types of associativity.
 
  * 1 - way associative or else direct mapped
  * N - way associative 
  * Fully associative
  
- Increasing the associativity increases the complexity of the CPU.  
- There is more inforamtion about Caches to the links I 've used bellow. Those references I used to make an estimate of what the prices of the caches are going to be.
+ Increasing the associativity increases the complexity of the CPU and therefore the cost.  
+ There is more inforamtion about Caches to the links I 've used bellow. Those are the references I used, trying to make an estimate of what the prices of the caches are going to be.
  
  
 Cost Estimates: 
@@ -277,12 +279,13 @@ Refrence for Costs and Prices and CPU Architecture:
 * [Caches and Memory Presentation](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/lecture_caches-handout.pdf)
 
 
-With those values in mind we create a functionn that calculates the cost of our CPU:
+With those values in mind we create a function that calculates the cost of our CPU:
 
 Cost = L1 instruction cache size(in kB) * 0.005$ + L1 data cache size(in Kb) * 0.005$ + L1 instruction cache associativity * 0.25$ + L1 data cache associativity * 0.25$ + L2 cache size(in kB) * 0.0025$ + L2 data cache associativity * 0.25$
-(I will consider making the L1 cache size more expensive or maybe the associativity cheaper because I think the sizes are not what I suppose they should be
+(I will consider making the L1 cache size more expensive or maybe the associativity and L2 cache cheaper because I think the prices are not proportianl and may give an inaccurate conclusion)  
+
 **System 1 :**
-Cost:
+
 * L1 instruction cache size = 64kB : 0.32$
 * L1 instruction cache associativity = 2 : 0.5$
 * L1 data cache size = 32kB : 0.16$
@@ -293,7 +296,7 @@ Cost:
 Total Cost = 6.04$  
 
 **System 2 :**
-Cost:
+
 * L1 instruction cache size = 128kB : 0.64$
 * L1 instruction cache associativity = 1 : 0.25$
 * L1 data cache size = 64kB : 0.32$
@@ -304,6 +307,7 @@ Cost:
 Total Cost = 8.54$
 
 **System 3 :**  
+
 * L1 instruction cache size = 128kB : 0.64$
 * L1 instruction cache associativity = 1 : 0.25$
 * L1 data cache size = 128 : 0.64$
@@ -314,7 +318,8 @@ Total Cost = 8.54$
 Total cost = 12.52$
 
 
-**System 4 :**  
+**System 4 :**
+
 * L1 instruction cache size = 128kB : 0.64$
 * L1 instruction cache associativity = 8 : 2$
 * L1 data cache size = 64kB : 0.32$
@@ -325,6 +330,7 @@ Total cost = 12.52$
 Total cost = 14.08$
 
 **System 5 :**  
+
 * L1 instruction cache size = 128kB : 0.64$
 * L1 instruction cache associativity = 16 : 4$
 * L1 data cache size = 64kB : 0.32$
@@ -336,6 +342,7 @@ Total cost = 22.08$
 
 
 **System 6 :**  
+
 * L1 instruction cache size = 256kB : 1.28$
 * L1 instruction cache associativity = 4 : 1$
 * L1 data cache size = 256kB : 1.28$
@@ -348,7 +355,8 @@ Total cost = 29.04$
 [COST GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost.pdf)  
 [COST-CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost-CPI.pdf)
 
-
+As a first conclusion we could say that the best CPU configuration was the first. The price was sagnificantly smaller but the CPI difference was insigificant.
+I am waiting for the second round of Benchmarks so I can confirm that this is the case.
 
 
 
