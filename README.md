@@ -245,7 +245,7 @@ I've noticed that that specjeng benchmark increased dramtically the cpi avergae 
 
 ### 2. Graphs
 
-
+Waiting for benchmarks results. I ran an extensive number of Benchmarks with almost all possibles changes that I could do considering the limits that we were given. Although I had enough benchmarks already about 10 different, I made a script so that I can see the effects of every individual change reffering to the deafault configuration. I made that choice beacuse I couldn't think that the mixed benchmarks I had, could give descriptive enough graphs and results.
 
 
 
