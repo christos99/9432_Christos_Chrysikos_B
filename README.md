@@ -143,6 +143,28 @@ Benchmark Files for 4GHz:[specbzip](https://github.com/christos99/9432_Christos_
 
 ## Second Part
 
+### All the different configurations I used.  
+**(The list shows the different parameter that was changed while running the simulation, the other parameters do not vary from the default parameters used in the first simulation of this Lab)**  
+
+* L1i and L1d = 64kB
+* L1i and L1d = 128kB
+* L1i and L1d = 256kB
+* L2 = 512kB
+* L2 = 1024kB
+* L2 = 2048kB
+* L2 = 4096kB
+* L1i and L1d Assoc= 6
+* L1i and L1d Assoc= 8
+* L1i and L1d Assoc= 10
+* L1i and L1d Assoc= 12
+* L2 Assoc= 4
+* L2 Assoc= 8
+* L2 Assoc= 16
+* L2 Assoc= 32
+
+
+
+
 ### 1. DIfferent Configurations:
 
 **Configuring Only L1 Cache Size**  
@@ -157,10 +179,10 @@ Benchmark Files for 4GHz:[specbzip](https://github.com/christos99/9432_Christos_
 * L2 cache associativity = 8
 * cache line size = 64
 
-CPI(average): 2.716
+CPI(average): 2.716  
 SIM_SECONDS: 0.2716s
 
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-64kB-2-32kB-2-512kB-8-64)
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L1%20Cache/spec_results_default-64kB-64kB)
 
 **System 2: (L1i and L1d = 128kB)** 
 
@@ -172,10 +194,10 @@ SIM_SECONDS: 0.2716s
 * L2 cache associativity = 8
 * cache line size = 64
 
-CPI(average): 2.710
+CPI(average): 2.710  
 SIM_SECONDS: 0.271s
 
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-128kB-1-64kB-1-1024kB-2-64)
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L1%20Cache/spec_results_default-128kB-128kB)
 
 
 **System 3: (L1i and L1d = 256kB)** 
@@ -188,10 +210,10 @@ SIM_SECONDS: 0.271s
 * L2 cache associativity = 8
 * cache line size = 64
 
-CPI(average): 2.704
+CPI(average): 2.704  
 SIM_SECONDS: 0.2704s
 
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-128kB-1-128kB-1-2048kB-2-64)
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L1%20Cache/spec_results_default-256kB-256kB)
 
 
 **Configuring Only L2 Cache Size** 
@@ -207,9 +229,9 @@ SIM_SECONDS: 0.2704s
 * L2 cache associativity = 8
 * cache line size = 64
 
-CPI(average): 2.750
+CPI(average): 2.750  
 SIM_SECONDS: 0.2750s
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-128kB-16-64kB-16-1024kB-32-64)
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L2%20Cache/spec_results_default--512kB)
 
 **System 5: (L2 = 1024kB)** 
 
@@ -222,11 +244,11 @@ SIM_SECONDS: 0.2750s
 * L2 cache associativity = 8
 * cache line size = 64
 
-CPI(average): 2.744
+CPI(average): 2.744  
 SIM_SECONDS: 0.2744s
   
 
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-256kB-4-256kB-4-4096kB-16-64)
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L2%20Cache/spec_results_default--1024kB)
 
 
 **System 6: (L2 = 2048kB)** 
@@ -240,14 +262,14 @@ SIM_SECONDS: 0.2744s
 * L2 cache associativity = 8
 * cache line size = 64
 
-CPI(average): 2.740
+CPI(average): 2.740  
 SIM_SECONDS: 0.274s
 
   
 
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-256kB-4-256kB-4-4096kB-16-64)
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L2%20Cache/spec_results_default--2048kB)
 
-**System 6: (L2 = 4096kB)** 
+**System 7: (L2 = 4096kB)** 
 
 
 * L1 instruction cache size = 32kB
@@ -258,46 +280,49 @@ SIM_SECONDS: 0.274s
 * L2 cache associativity = 8
 * cache line size = 64
 
-CPI(average): 2.735
-SIM_SECONDS: 0.2735s
+CPI(average): 2.735  
+ SIM_SECONDS: 0.2735s
   
 
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-256kB-4-256kB-4-4096kB-16-64)
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L2%20Cache/spec_results_default--4096kB)
 
+The reamining tests involve L1 and L2 cache association changes. After their completion I couldn't see any differences in CPI or SIM_SECONDS results. That's why I decided not to display them.
 
+Average:(same everywhere)  
+**L1 Association**  
+* Different Assoc Values:6,8,10,12  
+* L1 Assoc SIM_SECONDS: 0.2750s
+* L1 Assoc CPI: 2.75  
 
+[BENCHMARKS for L1 Association](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L1%20Cache%20Assoc)
 
-[Results File](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/Results_spec_results_cpi_all.txt)
-
-The reamining tests involve L1 and L2 cache association changes. After their completion couldn't see any differences in CPI or SIM_SECONDS results. That's why I decided not to display them.
+**L2 Association**  
 Average:(same everywhere)
-Different Assoc Values:6,8,10,12
-L1 Assoc SIM_SECONDS: 0.2750s
-L1 Assoc CPI: 2.75
+* Different Assoc Values:4,8,16,32
+* L2 Assoc SIM_SECONDS: 0.2750s
+* L2 Assoc CPI: 2.75
 
-Average:(same everywhere)
-Different Assoc Values:4,8,16,32
-L2 Assoc SIM_SECONDS: 0.2750s
-L2 Assoc CPI: 2.75
+
+[BENCHMARKS for L2 Association](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L1%20Cache%20Assoc)
 
 
 ### 2. Graphs
 
 Waiting for benchmarks results. I ran an extensive number of Benchmarks with almost all possibles changes that I could do considering the limits that we were given. Although I had enough benchmarks already about 10 different, I made a script so that I can see the effects of every individual change reffering to the default configuration. I made that choice beacuse I couldn't think that the mixed benchmarks I had, could give descriptive enough graphs and results.  
 
-**L1 Size CPI**
+**L1 Size CPI:**
 ![L1 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/CPI%20L1%20CACHE%20SIZE-page-001.jpg)
-**L2 Size CPI**  
+**L2 Size CPI:**  
 ![L2 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20CACHE%20SIZE%20CPI-page-001.jpg)  
-**L1 Size SIM SECONDS(average for all 5 test together)**  
+**L1 Size SIM SECONDS(average for all 5 test together):**  
 ![L1 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20SIze%20Sim%20Seconds.png)  
-**L2 Size SIM SECONDS(average for all 5 test together)**  
+**L2 Size SIM SECONDS(average for all 5 test together):**  
 ![L2 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20SIze%20Sim%20Seconds.png)  
-**L1 Assoc CPI(average for all 5 test together)**  
+**L1 Assoc CPI(average for all 5 test together):**  
 ![L1 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20Assoc%20CPI.png)  
-**L2 Assoc CPI(average for all 5 test together)**  
+**L2 Assoc CPI(average for all 5 test together):**  
 ![L2 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20Assoc%20CPI.png)  
-**L1 Assoc SIM SECONDS(average for all 5 test together)**  
+**L1 Assoc SIM SECONDS(average for all 5 test together):**  
 ![L1 Assoc SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20Assoc%20Sim%20Seconds.png)  
 **L2 Assoc SIM SECONDS(average for all 5 test together)**  
 ![L2 Assoc SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20Assoc%20Sim%20Seconds.png)
@@ -308,7 +333,7 @@ Waiting for benchmarks results. I ran an extensive number of Benchmarks with alm
 
 ## Third Part
 
-When we think of designing a CPU cache memmory hierarchy the first thing that comes to mind alogside with performance is the cost. Yes it is certain that we want to build the fastest and most powerfull CPU but we also want to make it as cheap as possible so it's easily distributed and used. With that in my mind through my reasearch I collected some information through runnning several simulations with different specifications for CPU Cache design and size. I 've listed them below from System 1-6 (I ran many different benchmarks but I chose those who had the most sagnifiacant differences).  
+When we think of designing a CPU cache memmory hierarchy the first thing that comes to mind alogside with performance is the cost. Yes it is certain that we want to build the fastest and most powerfull CPU but we also want to make it as cheap as possible so it's easily distributed and used. With that in my mind through my reasearch I collected some information after runnning several simulations with different specifications for CPU Cache design and size. I 've listed them below from System 1-7 (I ran many different benchmarks but I chose those who had the most sagnificant differences).  
 
 About the CPU Design, the L1I and L1D cache is the very fist level of cache memmory inside the CPU and therefore the fastest. The most commonly used size for those caches is 16-32-64 kB. There is a reason we won't make them bigger,first the cost as I mentioned before this SRAM type of memmory is very expensive and second the bigger the cache size the smaller the miss rate, that sounds good at first but it creates other kind of problems. There are 3 kinds of misses compulsory, capacity, and conflict. When we increase the size the conflict misses increase and when we decrease the size we more compulsory misses. It is therfore optimal to find  a sweet spot which in this case is 32-64kB and in some cases 128kB.  
 For L2 Cache the things are a bit different we have a larger sized cache in general, ranged from 512kb to 2048 kb and in some cases even 4096kB or 8192kB. It is still fast SRAM but not as fast and expensive as the L1. We use L2 cache to reduce the penalty from going to the main memory. So it 's a Level between CPU - L1 Cache and main memory DRAM.  
