@@ -145,99 +145,123 @@ Benchmark Files for 4GHz:[specbzip](https://github.com/christos99/9432_Christos_
 
 ### 1. DIfferent Configurations:
 
-**System 1** 
+**Configuring Only L1 Cache Size**  
 
-**1GHz-64kB-2-32kB-2-512kB-8-64:**
+**System 1: (L1i and L1d = 64kB)** 
 
 * L1 instruction cache size = 64kB
 * L1 instruction cache associativity = 2
-* L1 data cache size = 32kB
+* L1 data cache size = 64kB
+* L1 data cache associativity = 2
+* L2 cache size = 2048kB
+* L2 cache associativity = 8
+* cache line size = 64
+
+CPI(average): 2.716
+SIM_SECONDS: 0.2716s
+
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-64kB-2-32kB-2-512kB-8-64)
+
+**System 2: (L1i and L1d = 128kB)** 
+
+* L1 instruction cache size = 128kB
+* L1 instruction cache associativity = 2
+* L1 data cache size = 128kB
+* L1 data cache associativity = 2
+* L2 cache size = 2048kB
+* L2 cache associativity = 8
+* cache line size = 64
+
+CPI(average): 2.710
+SIM_SECONDS: 0.271s
+
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-128kB-1-64kB-1-1024kB-2-64)
+
+
+**System 3: (L1i and L1d = 256kB)** 
+
+* L1 instruction cache size = 256kB
+* L1 instruction cache associativity = 2
+* L1 data cache size = 256kB
+* L1 data cache associativity = 2
+* L2 cache size = 2048kB
+* L2 cache associativity = 8
+* cache line size = 64
+
+CPI(average): 2.704
+SIM_SECONDS: 0.2704s
+
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-128kB-1-128kB-1-2048kB-2-64)
+
+
+**Configuring Only L2 Cache Size** 
+
+**System 4: (L2 = 512kB)** 
+
+
+* L1 instruction cache size = 32kB
+* L1 instruction cache associativity = 2
+* L1 data cache size = 64kB
 * L1 data cache associativity = 2
 * L2 cache size = 512kB
 * L2 cache associativity = 8
 * cache line size = 64
 
-CPI(average):2.7348436  
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-64kB-2-32kB-2-512kB-8-64)
-
-**System 2**  
-
-**1GHz-128kB-1-64kB-1-1024kB-2-64:**
-
-* L1 instruction cache size = 128kB
-* L1 instruction cache associativity = 1
-* L1 data cache size = 64kB
-* L1 data cache associativity = 1
-* L2 cache size = 1024kB
-* L2 cache associativity = 2
-* cache line size = 64
-
-CPI(average):2.7343856  
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-128kB-1-64kB-1-1024kB-2-64)
-
-**System 3**  
-
-**1GHz-128kB-1-128kB-1-2048kB-2-64:**
-
-* L1 instruction cache size = 128kB
-* L1 instruction cache associativity = 1
-* L1 data cache size = 1
-* L1 data cache associativity 1
-* L2 cache size = 2048kB
-* L2 cache associativity = 2
-* cache line size = 64
-
-CPI(average):2.717256  
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-128kB-1-128kB-1-2048kB-2-64)
-
-**System 4**  
-
-**1GHz-128kB-8-64kB-8-1024kB-16-64:**
-
-* L1 instruction cache size = 128kB
-* L1 instruction cache associativity = 64kB
-* L1 data cache size = 64kB
-* L1 data cache associativity = 8
-* L2 cache size = 1024kB
-* L2 cache associativity = 16
-* cache line size = 64
-
-CPI(average):2.7174622  
-[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-128kB-8-64kB-8-1024kB-16-64)
-
-**System 5**  
-
-**1GHz-128kB-16-64kB-16-1024kB-32-64:**
-
-* L1 instruction cache size = 128kB
-* L1 instruction cache associativity = 16
-* L1 data cache size = 64kB
-* L1 data cache associativity = 16
-* L2 cache size = 1024kB
-* L2 cache associativity = 32
-* cache line size = 64
-
-CPI(average):2.7166182  
+CPI(average): 2.750
+SIM_SECONDS: 0.2750s
 [BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-128kB-16-64kB-16-1024kB-32-64)
 
-**System 6**  
+**System 5: (L2 = 1024kB)** 
 
-**1GHz-256kB-4-256kB-4-4096kB-16-64:**
 
-* L1 instruction cache size = 256kB
-* L1 instruction cache associativity = 4
-* L1 data cache size = 256kB
-* L1 data cache associativity = 4
-* L2 cache size = 4096kB
-* L2 cache associativity = 16
+* L1 instruction cache size = 32kB
+* L1 instruction cache associativity = 2
+* L1 data cache size = 64kB
+* L1 data cache associativity = 2
+* L2 cache size = 1024kB
+* L2 cache associativity = 8
 * cache line size = 64
 
-CPI(average):2.7005728  
+CPI(average): 2.744
+SIM_SECONDS: 0.2744s
+  
+
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-256kB-4-256kB-4-4096kB-16-64)
+
+
+**System 6: (L2 = 2048kB)** 
+
+
+* L1 instruction cache size = 32kB
+* L1 instruction cache associativity = 2
+* L1 data cache size = 64kB
+* L1 data cache associativity = 2
+* L2 cache size = 2048kB
+* L2 cache associativity = 8
+* cache line size = 64
+
+CPI(average): 2.740
+SIM_SECONDS: 0.274s
 
   
-CPI(average)(specjeng not included):1.61242525
 
-I've noticed that that specjeng benchmark increased dramtically the cpi avergae and that makes me wonder if there are any errors.  
+[BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-256kB-4-256kB-4-4096kB-16-64)
+
+**System 6: (L2 = 4096kB)** 
+
+
+* L1 instruction cache size = 32kB
+* L1 instruction cache associativity = 2
+* L1 data cache size = 64kB
+* L1 data cache associativity = 2
+* L2 cache size = 4096kB
+* L2 cache associativity = 8
+* cache line size = 64
+
+CPI(average): 2.735
+SIM_SECONDS: 0.2735s
+  
+
 [BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-256kB-4-256kB-4-4096kB-16-64)
 
 
@@ -245,9 +269,32 @@ I've noticed that that specjeng benchmark increased dramtically the cpi avergae 
 
 [Results File](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/Results_spec_results_cpi_all.txt)
 
+The reamining tests involve L1 and L2 cache association changes. After their completion couldn't see any differences in CPI or SIM_SECONDS results. That's why I decided not to display them.
+Average:(same everywhere)
+Different Assoc Values:6,8,10,12
+L1 Assoc SIM_SECONDS: 0.2750s
+L1 Assoc CPI: 2.75
+
+Average:(same everywhere)
+Different Assoc Values:4,8,16,32
+L2 Assoc SIM_SECONDS: 0.2750s
+L2 Assoc CPI: 2.75
+
+
 ### 2. Graphs
 
 Waiting for benchmarks results. I ran an extensive number of Benchmarks with almost all possibles changes that I could do considering the limits that we were given. Although I had enough benchmarks already about 10 different, I made a script so that I can see the effects of every individual change reffering to the default configuration. I made that choice beacuse I couldn't think that the mixed benchmarks I had, could give descriptive enough graphs and results.
+
+![L1 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/CPI%20L1%20CACHE%20SIZE-page-001.jpg)
+![L2 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20CACHE%20SIZE%20CPI-page-001.jpg)
+![L1 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20SIze%20Sim%20Seconds.png)
+![L2 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20SIze%20Sim%20Seconds.png)
+![L1 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/Results_spec_results_cpi_all.txt)
+![L2 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/Results_spec_results_cpi_all.txt)
+![L1 Assoc SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20Assoc%20Sim%20Seconds.png)
+![L2 Assoc SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20Assoc%20Sim%20Seconds.png)
+
+
 
 
 
