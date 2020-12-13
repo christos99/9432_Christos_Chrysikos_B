@@ -283,7 +283,8 @@ L2 Assoc CPI: 2.75
 
 ### 2. Graphs
 
-Waiting for benchmarks results. I ran an extensive number of Benchmarks with almost all possibles changes that I could do considering the limits that we were given. Although I had enough benchmarks already about 10 different, I made a script so that I can see the effects of every individual change reffering to the default configuration. I made that choice beacuse I couldn't think that the mixed benchmarks I had, could give descriptive enough graphs and results.
+Waiting for benchmarks results. I ran an extensive number of Benchmarks with almost all possibles changes that I could do considering the limits that we were given. Although I had enough benchmarks already about 10 different, I made a script so that I can see the effects of every individual change reffering to the default configuration. I made that choice beacuse I couldn't think that the mixed benchmarks I had, could give descriptive enough graphs and results.  
+
 **L1 Size CPI**
 ![L1 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/CPI%20L1%20CACHE%20SIZE-page-001.jpg)
 **L2 Size CPI**
