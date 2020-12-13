@@ -285,7 +285,7 @@ SIM_SECONDS: 0.2735s
 
 [BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L2%20Cache/spec_results_default--4096kB)
 
-The reamining tests involve L1 and L2 cache association changes. After their completion I couldn't see any differences in CPI or SIM_SECONDS results. That's why I decided not to display them.
+The remaining tests involve L1 and L2 cache association changes. After their completion I couldn't see any differences in CPI or SIM_SECONDS results. That's why I decided not to display them.
 
 Average:(same everywhere)  
 **L1 Association**  
@@ -458,7 +458,7 @@ Total cost = 18.84$
 
 ![COST-CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/CPI-COST.jpg)
 
-As a first conclusion we could say that the best CPU configuration was the System 3. The price was not so high but the CPI was the lowest.
+As a first conclusion we could say that the best CPU configuration was the System 3. The price was not so high but the CPI was the closer to 1.
 
 
 
