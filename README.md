@@ -144,7 +144,7 @@ Benchmark Files for 4GHz:[specbzip](https://github.com/christos99/9432_Christos_
 ## Second Part
 
 ### All the different configurations I used.  
-**(The list shows the different parameter that was changed while running the simulation, the other parameters do not vary from the default parameters used in the first simulation of this Lab)**  
+**(The list shows the different parameter that was changed while running the simulation, the other parameters do not vary from the default parameters used in the first simulation of this Lab above)**  
 
 * L1i and L1d = 64kB
 * L1i and L1d = 128kB
@@ -161,8 +161,6 @@ Benchmark Files for 4GHz:[specbzip](https://github.com/christos99/9432_Christos_
 * L2 Assoc= 8
 * L2 Assoc= 16
 * L2 Assoc= 32
-
-
 
 
 ### 1. DIfferent Configurations:
@@ -281,7 +279,7 @@ SIM_SECONDS: 0.274s
 * cache line size = 64
 
 CPI(average): 2.735  
- SIM_SECONDS: 0.2735s
+SIM_SECONDS: 0.2735s
   
 
 [BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L2%20Cache/spec_results_default--4096kB)
@@ -303,28 +301,27 @@ Average:(same everywhere)
 * L2 Assoc CPI: 2.75
 
 
-[BENCHMARKS for L2 Association](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L1%20Cache%20Assoc)
+[BENCHMARKS for L2 Association](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L2%20Cache%20Assoc)
 
 
 ### 2. Graphs
+ 
 
-Waiting for benchmarks results. I ran an extensive number of Benchmarks with almost all possibles changes that I could do considering the limits that we were given. Although I had enough benchmarks already about 10 different, I made a script so that I can see the effects of every individual change reffering to the default configuration. I made that choice beacuse I couldn't think that the mixed benchmarks I had, could give descriptive enough graphs and results.  
-
-**L1 Size CPI:**
+* **L1 Size CPI:**
 ![L1 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/CPI%20L1%20CACHE%20SIZE-page-001.jpg)
-**L2 Size CPI:**  
+* **L2 Size CPI:**  
 ![L2 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20CACHE%20SIZE%20CPI-page-001.jpg)  
-**L1 Size SIM SECONDS(average for all 5 test together):**  
+* **L1 Size SIM SECONDS(average for all 5 test together):**  
 ![L1 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20SIze%20Sim%20Seconds.png)  
-**L2 Size SIM SECONDS(average for all 5 test together):**  
+* **L2 Size SIM SECONDS(average for all 5 test together):**  
 ![L2 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20SIze%20Sim%20Seconds.png)  
-**L1 Assoc CPI(average for all 5 test together):**  
+* **L1 Assoc CPI(average for all 5 test together):**  
 ![L1 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20Assoc%20CPI.png)  
-**L2 Assoc CPI(average for all 5 test together):**  
+* **L2 Assoc CPI(average for all 5 test together):**  
 ![L2 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20Assoc%20CPI.png)  
-**L1 Assoc SIM SECONDS(average for all 5 test together):**  
+* **L1 Assoc SIM SECONDS(average for all 5 test together):**  
 ![L1 Assoc SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20Assoc%20Sim%20Seconds.png)  
-**L2 Assoc SIM SECONDS(average for all 5 test together)**  
+* **L2 Assoc SIM SECONDS(average for all 5 test together)**  
 ![L2 Assoc SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20Assoc%20Sim%20Seconds.png)
 
 
@@ -352,9 +349,9 @@ Cost Estimates:
 * L2 = 2.500 per GB (easier and cheaper to make than L1 cache but still SRAM)
 * Assocativity = for every multiplication by two the cost doubles(for example: assoc = 2, cost = 2 | assoc = 4, cost = 4 etc) 
   lets estimate that for assoc = 2 the cost = 0.5$ dollars 
-* Cache line is not changed so I won't consider that in the cost  
+* Cache line is not changed so I won't consider that in the cost.
 
-Refrence for Costs and Prices and CPU Architecture: 
+Reference for Costs and Prices and CPU Architecture: 
 * [University of NOTRE DAMNE](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/University%20of%20NOTREDAM%20Presentation.pdf) 
 * [Caches and Memory Presentation](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/lecture_caches-handout.pdf)
 
@@ -364,73 +361,98 @@ With those values in mind we create a function that calculates the cost of our C
 Cost = L1 instruction cache size(in kB) * 0.005$ + L1 data cache size(in Kb) * 0.005$ + L1 instruction cache associativity * 0.25$ + L1 data cache associativity * 0.25$ + L2 cache size(in kB) * 0.0025$ + L2 data cache associativity * 0.25$
 (I will consider making the L1 cache size more expensive or maybe the associativity and L2 cache cheaper because I think the prices are not proportianl and may give an inaccurate conclusion)  
 
-**System 1 :**
+**System 1: (L1i and L1d = 64kB):**
 
 * L1 instruction cache size = 64kB : 0.32$
 * L1 instruction cache associativity = 2 : 0.5$
-* L1 data cache size = 32kB : 0.16$
+* L1 data cache size = 64kB : 0.32$
 * L1 data cache associativity = 2 : 0.5$
+* L2 cache size = 2048kB : 10.24$
+* L2 cache associativity = 8 : 2$
+
+CPI(average): 2.716
+
+Total Cost = 13.88$  
+
+**System 2: (L1i and L1d = 128kB):**
+
+* L1 instruction cache size = 128kB : 0.64$
+* L1 instruction cache associativity = 2 : 0.5$
+* L1 data cache size = 128kB : 0.64$
+* L1 data cache associativity = 2 : 0.5$
+* L2 cache size = 2048kB : 10.24$
+* L2 cache associativity = 8 : 2$
+
+CPI(average): 2.710
+
+Total Cost = 14.52$
+
+**System 3: (Li and L1d = 256kB):**
+
+* L1 instruction cache size = 256kB : 1.28$
+* L1 instruction cache associativity = 2 : 0.5$
+* L1 data cache size = 256kB : 1.28$
+* L1 data cache associativity = 2 : 0.5$
+* L2 cache size = 2048kB : 10.24$
+* L2 cache associativity = 8 : 2$
+
+CPI(average): 2.704
+
+Total Cost = 15.8$
+
+
+**System 4: (L2 = 512kB):**
+
+* L1 instruction cache size = 32kB : 0.16$
+* L1 instruction cache associativity = 2 : 0.5$
+* L1 data cache size = 64kB : 0.32$
+* L1 data cache associativity 2 : 0.5$
 * L2 cache size = 512kB : 2.56$
 * L2 cache associativity = 8 : 2$
 
-Total Cost = 6.04$  
+CPI(average): 2.750
 
-**System 2 :**
+Total cost = 6.04$
 
-* L1 instruction cache size = 128kB : 0.64$
-* L1 instruction cache associativity = 1 : 0.25$
+**System 5: (L2 = 1024kB):**  
+
+* L1 instruction cache size = 32kB : 0.16$
+* L1 instruction cache associativity = 2 : 0.5$
 * L1 data cache size = 64kB : 0.32$
-* L1 data cache associativity = 1 : 0.25$
+* L1 data cache associativity 2 : 0.5$
 * L2 cache size = 1024kB : 5.12$
-* L2 cache associativity = 2 : 0.5$
+* L2 cache associativity = 8 : 2$
 
-Total Cost = 8.54$
+CPI(average): 2.744
 
-**System 3 :**  
-
-* L1 instruction cache size = 128kB : 0.64$
-* L1 instruction cache associativity = 1 : 0.25$
-* L1 data cache size = 128 : 0.64$
-* L1 data cache associativity 1 : 0.25
-* L2 cache size = 2048kB : 10.24$
-* L2 cache associativity = 2 : 0.5$
-
-Total cost = 12.52$
+Total cost = 8.6$
 
 
-**System 4 :**
+**System 6: (L2 = 2048kB):**  
 
-* L1 instruction cache size = 128kB : 0.64$
-* L1 instruction cache associativity = 8 : 2$
+* L1 instruction cache size = 32kB : 0.16$
+* L1 instruction cache associativity = 2 : 0.5$
 * L1 data cache size = 64kB : 0.32$
-* L1 data cache associativity 8 : 2$
-* L2 cache size = 1024kB : 5.12$
-* L2 cache associativity = 16 : 4$
+* L1 data cache associativity 2 : 0.5$
+* L2 cache size = 2048kB : 5.12$
+* L2 cache associativity = 8 : 2$
 
-Total cost = 14.08$
+CPI(average): 2.740
 
-**System 5 :**  
+Total cost = 13.72$
 
-* L1 instruction cache size = 128kB : 0.64$
-* L1 instruction cache associativity = 16 : 4$
+**System 7: (L2 = 4096kB):**  
+
+* L1 instruction cache size = 32kB : 0.16$
+* L1 instruction cache associativity = 2 : 0.5$
 * L1 data cache size = 64kB : 0.32$
-* L1 data cache associativity 16 : 4$
-* L2 cache size = 1024kB : 5.12$
-* L2 cache associativity = 32 : 8$
+* L1 data cache associativity 2 : 0.5$
+* L2 cache size = 4096kB : 5.12$
+* L2 cache associativity = 8 : 2$
 
-Total cost = 22.08$
+CPI(average): 2.735
 
-
-**System 6 :**  
-
-* L1 instruction cache size = 256kB : 1.28$
-* L1 instruction cache associativity = 4 : 1$
-* L1 data cache size = 256kB : 1.28$
-* L1 data cache associativity 4 : 1$
-* L2 cache size = 4096kB : 20.48$
-* L2 cache associativity = 16 : 4$
-
-Total cost = 29.04$
+Total cost = 18.84$
 
 [COST GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost.pdf)  
 [COST-CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost-CPI.pdf)
