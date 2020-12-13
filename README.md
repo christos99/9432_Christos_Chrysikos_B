@@ -284,14 +284,21 @@ L2 Assoc CPI: 2.75
 ### 2. Graphs
 
 Waiting for benchmarks results. I ran an extensive number of Benchmarks with almost all possibles changes that I could do considering the limits that we were given. Although I had enough benchmarks already about 10 different, I made a script so that I can see the effects of every individual change reffering to the default configuration. I made that choice beacuse I couldn't think that the mixed benchmarks I had, could give descriptive enough graphs and results.
-
+**L1 Size CPI**
 ![L1 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/CPI%20L1%20CACHE%20SIZE-page-001.jpg)
-![L2 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20CACHE%20SIZE%20CPI-page-001.jpg)
-![L1 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20SIze%20Sim%20Seconds.png)
-![L2 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20SIze%20Sim%20Seconds.png)
-![L1 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/Results_spec_results_cpi_all.txt)
-![L2 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/Results_spec_results_cpi_all.txt)
-![L1 Assoc SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20Assoc%20Sim%20Seconds.png)
+**L2 Size CPI**
+![L2 Size CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20CACHE%20SIZE%20CPI-page-001.jpg)  
+**L1 Size SIM SECONDS**
+![L1 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20SIze%20Sim%20Seconds.png)  
+**L2 Size SIM SECONDS**
+![L2 Size SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20SIze%20Sim%20Seconds.png)  
+**L1 Assoc CPI**
+![L1 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20Assoc%20CPI.png)  
+**L2 Assoc CPI**
+![L2 Assoc CPI](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20Assoc%20CPI.png)  
+**L1 Assoc SIM SECONDS**
+![L1 Assoc SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L1%20Assoc%20Sim%20Seconds.png)  
+**L2 Assoc SIM SECONDS**
 ![L2 Assoc SIM SECONDS](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/L2%20Assoc%20Sim%20Seconds.png)
 
 
