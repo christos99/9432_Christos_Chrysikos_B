@@ -27,7 +27,7 @@
   * Size = 64
 
 
-Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/Options.py)
+Options.py:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/References/Options.py)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -47,7 +47,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 
 #### specmcf
 
-* SIM_SECONDS = 0.123265
+* SIM_SECONDS = 0.123265s
 
 * CPI = 1.232645
 
@@ -58,7 +58,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 
 #### spechmmer
 
-* SIM_SECONDS = 0.118517
+* SIM_SECONDS = 0.118517s
 
 * CPI = 1.185174
 
@@ -69,7 +69,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 
 #### speclibm
 
-* SIM_SECONDS = 0.262262
+* SIM_SECONDS = 0.262262s
 
 * CPI = 2.622616
 
@@ -80,7 +80,7 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
 
 #### specsjeng
 
-* SIM_SECONDS = 0.705640
+* SIM_SECONDS = 0.705640s
 
 * CPI = 7.0564
 
@@ -89,13 +89,13 @@ Reference File:[here](https://github.com/christos99/9432_Christos_Chrysikos_B/bl
   * L1D = 0.121831
   * L2 = 0.999940
 
-Date gathered in a [file](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/spec_results_1GHz-default.txt)
-* GRAPHS:
-  * ![CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/CPI.jpg)  
-  * ![SIM SECONDS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/SIM_SECONDS-page-001.jpg)  
-  * ![L1I MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L1I_Miss_Rate-page-001.jpg)  
-  * ![L1D MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L1D_Miss_Rate.jpg)  
-  * ![L2 MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L2_Miss_Rate-page-001.jpg)  
+Data gathered in a [file](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/spec_results_1GHz-default.txt)
+**GRAPHS:**
+ * ![CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/CPI.jpg)  
+ * ![SIM SECONDS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/SIM_SECONDS-page-001.jpg)  
+ * ![L1I MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L1I_Miss_Rate-page-001.jpg)  
+ * ![L1D MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L1D_Miss_Rate.jpg)  
+ * ![L2 MISS GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/L2_Miss_Rate-page-001.jpg)  
   
   Reference Files:
 * [specbzip](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specbzip)
@@ -111,7 +111,7 @@ Date gathered in a [file](https://github.com/christos99/9432_Christos_Chrysikos_
 
 ### 3.(CPU CLOCK = 2GHz)
 
-When we run the simualtion with cpu-clock = 2GHz we see that the system.clk_domain.clock = 1000 but the cpu_cluster.clk_domain.clock = 500. If we increase the cpu-clock=4GHz then cpu_cluster.clk_domain.clock= 250 so I suppose that whatever the CPU clock cycle is in GHz it is two or in the last case four times faster than the systems clock.  
+When we run the simualtion with cpu-clock = 2GHz we see that the system.clk_domain.clock = 1000 but the cpu_cluster.clk_domain.clock = 500. If we increase the cpu-clock=4GHz then cpu_cluster.clk_domain.clock= 250 so I suppose that whatever the CPU clock cycle is in GHz it is two or in the last case four times faster than the system clock. System clock is defined as the speed of the system that does not include the CPU such as the memory and the caches. 
 * **SIM_SECONDS**
   * 1GHz(average) = 0.2740086s [spec_results_1GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/RESULTS_1_2_4_GHz/spec_results_1GHz-latest-all.txt)
   * 2GHz(average) = 0.1788366s [spec_results_2GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/CPI%20-%20Results-All/RESULTS_1_2_4_GHz/spec_results_2GHz-default.txt)
@@ -124,7 +124,7 @@ In case we add another CPU the frequency is going to be 2GHz or what ever else w
 Sources that say more about clock speed and general cpu performance increase:
 [Factors affecting processor performance](https://isaaccomputerscience.org/concepts/sys_arch_performance)
 
-* **STATS:**
+**STATS:**
   * [stats.txt for the 2GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/spec_results_2GHz-32kB-4-64kB-4-2048kB-16-64)  
   * [stats.txt for the 4GHz](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Benchmarks/spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specbzip/stats.txt) 
 
@@ -228,7 +228,8 @@ SIM_SECONDS: 0.2704s
 * cache line size = 64
 
 CPI(average): 2.750  
-SIM_SECONDS: 0.2750s
+SIM_SECONDS: 0.2750s  
+
 [BENCHMARKS](https://github.com/christos99/9432_Christos_Chrysikos_B/tree/main/Files/Benchmarks/Latest%20Final%20Benchmarks/L2%20Cache/spec_results_default--512kB)
 
 **System 5: (L2 = 1024kB)** 
@@ -454,11 +455,11 @@ CPI(average): 2.735
 
 Total cost = 18.84$
 
-[COST GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost.pdf)  
-[COST-CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/Cost-CPI.pdf)
 
-As a first conclusion we could say that the best CPU configuration was the first. The price was sagnificantly smaller but the CPI difference was insigificant.
-I am waiting for the second round of Benchmarks so I can confirm that this is the case.
+![COST-CPI GRAPH](https://github.com/christos99/9432_Christos_Chrysikos_B/blob/main/Files/Graphs/New%20Charts/CPI-COST.jpg)
+
+As a first conclusion we could say that the best CPU configuration was the System 3. The price was not so high but the CPI was the lowest.
+
 
 
 
